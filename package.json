@@ -1,0 +1,15 @@
+{
+  "name": "subtitles",
+  "version": "0.1.0",
+  "description": "Subtitle API: i.e. ?id=tt0848228&language=es",
+  "scripts": {
+    "start": "node index.js",
+    "server": "pm2 start index.js"
+  },
+  "dependencies": {
+    "@amilajack/yifysubtitles": "^2.1.4",
+    "axios": "^0.19.2",
+    "express": "^4.17.1",
+    "yifysubtitles": "^2.1.5"
+  }
+}
