@@ -1,8 +1,9 @@
-const express = require('express')
-const fs = require('fs')
-const subtitles = express()
-const yifysubtitles = require('yifysubtitles')
-const functions = require('firebase-functions')
+var express = require('express')
+var fs = require('fs')
+var subtitles = express()
+var yifysubtitles = require('yifysubtitles')
+var functions = require('firebase-functions')
+var port = 5000;
 
 subtitles.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*"); // update to match the domain you will make the request from
@@ -49,7 +50,7 @@ subtitles.get('/', (req, res) => {
   }
 })
 
-exports.subtitles = functions.https.onRequest(subtitles)
+subtitles.listen(port)
 
 // subtitles.use((req, res, next) => {
 //   res.header('Access-Control-Allow-Origin', 'YOUR-DOMAIN.TLD') // update to match the domain you will make the request from
