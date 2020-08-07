@@ -9,13 +9,13 @@
 
 ####  Torrents using IMDB_ID. 
 ```
-  /imdb-torrent-search?id=tt0848228&lang=it
+  /imdb-torrent-search?id=tt0848228
 ```
 
 
 ####  Use Xtorrent, search using title, type, and quality
 ```
-  /xtorrent?title=the+planet+of+the+apes&type=Movies&quality=720
+  /xtorrent?title=the+avengers+2012&type=Movies&quality=720
 ```
 
 
