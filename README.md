@@ -1,7 +1,7 @@
 # Subtitles and Torrents API
 
 
-####  subtitle using IMDB_ID.
+#### Search Subtitles using IMDB_ID.
 ```
   /subtitle-search?id=tt0848228&lang=it
 ```
