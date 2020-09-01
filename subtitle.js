@@ -33,10 +33,7 @@ module.exports = async (req, res) => {
 			const request = https.get(sub_url, (response) => {
 				response.pipe(file);
 			});
-		})
-		.catch((e) => res.send(e));
-  
-  setTimeout(() => {
+		  setTimeout(() => {
 				fs.readFile('./' + file_name, (err, data) => {
 					if (err) res.send(err);
 					else {
@@ -46,5 +43,9 @@ module.exports = async (req, res) => {
 					}
 				});
 			}, 700);
+		})
+		.catch((e) => res.send(e));
+  
+
   
 };
