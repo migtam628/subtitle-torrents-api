@@ -4,7 +4,7 @@
 #### Search Subtitles using IMDB_ID.
 ```
   /subtitle-search?lang=eng&imdbid=tt0848228
-  /subtitle-search?lang=ita&tmdbid=55614
+  /subtitle-search?lang=ita&tmdbid=24428
   /subtitle-search?lang=spa&query=the avengers
   
   /subtitle-search?lang=spa&imdbid=tt3107288&s=01&e=01
